@@ -80,32 +80,32 @@ client.on('messageCreate', async message => {
         let tieneEstructuraValida = false;
 
         if (row.tipo === '1') {
-            // Plantilla 1 (Tus canales anteriores)
-            const parte1 = "╭── ⋆˚࿔₊˚⊹﹒`♡ DM ₊·⁺";
-            const parte2 = "│| 9| Nombre :";
-            const parte3 = "│| 9| DM : Abierto";
-            const parte4 = "│| 9| Para :";
-            const parte5 = "│| ╰── ❀ 𓂃 ࣪˖ ₊˚+";
+            // Plantilla 1 (Completa con todos sus adornos y diseño exacto)
+            const p1 = "╭── ⋆˚࿔₊˚⊹`♡ DM ˚₊‧꒷";
+            const p2 = "✦│ ୨୧ Nombre :";
+            const p3 = "✦│ ୨୧ DM : Abierto";
+            const p4 = "✦│ ୨୧ Para :";
+            const p5 = "╰── ❀ 𓂃 ࣪˖ ₊˚⊹";
             
-            tieneEstructuraValida = message.content.includes(parte1) && 
-                                     message.content.includes(parte2) && 
-                                     message.content.includes(parte3) && 
-                                     message.content.includes(parte4) && 
-                                     message.content.includes(parte5);
+            tieneEstructuraValida = message.content.includes(p1) && 
+                                     message.content.includes(p2) && 
+                                     message.content.includes(p3) && 
+                                     message.content.includes(p4) && 
+                                     message.content.includes(p5);
 
         } else if (row.tipo === '2') {
-            // Plantilla 2 (Presentación COMPLETA con adornos y líneas estructurales)
-            const adornoArriba = "♡ Presentación";
-            const campo1 = "✦ Nombre:";
-            const campo2 = "✦ Apodo:";
-            const campo3 = "✦ Nacionalidad:";
-            const campo4 = "✦ Edad:";
-            const campo5 = "✦ Género:";
-            const campo6 = "✦ Orientación:";
-            const campo7 = "✦ Altura:";
-            const campo8 = "✦ Música favorita:";
-            const campo9 = "✦ Gustos:";
-            const campo10 = "✦ Pasatiempos:";
+            // Plantilla 2 (Presentación COMPLETA con adornos)
+            const adornoArriba = "╭── ⋆˚࿔₊˚⊹﹒`♡ Presentación˚₊‧꒷";
+            const campo1 = "│ ✦ Nombre:";
+            const campo2 = "│ ✦ Apodo:";
+            const campo3 = "│ ✦ Nacionalidad:";
+            const campo4 = "│ ✦ Edad:";
+            const campo5 = "│ ✦ Género:";
+            const campo6 = "│ ✦ Orientación:";
+            const campo7 = "│ ✦ Altura:";
+            const campo8 = "│ ✦ Música favorita:";
+            const campo9 = "│ ✦ Gustos:";
+            const campo10 = "│ ✦ Pasatiempos:";
             const adornoAbajo = "╰── ❀ 𓂃 ࣪˖ ₊˚⊹";
 
             tieneEstructuraValida = message.content.includes(adornoArriba) && 
@@ -137,7 +137,4 @@ client.on('messageCreate', async message => {
     });
 });
 
-client.login(process.env.DISCORD_TOKEN);
-
-// El bot inicia sesión usando la variable de entorno de Railway
 client.login(process.env.DISCORD_TOKEN);
