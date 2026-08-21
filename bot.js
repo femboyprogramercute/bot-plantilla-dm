@@ -82,9 +82,9 @@ client.on('messageCreate', async message => {
         if (row.tipo === '1') {
             // Plantilla 1 (Completa con todos sus adornos y diseño exacto)
             const p1 = "╭── ⋆˚࿔₊˚⊹`♡ DM ˚₊‧꒷";
-            const p2 = "✦│ ୨୧ Nombre :";
-            const p3 = "✦│ ୨୧ DM : Abierto";
-            const p4 = "✦│ ୨୧ Para :";
+            const p2 = "Nombre :";
+            const p3 = "DM : Abierto";
+            const p4 = "Para :";
             const p5 = "╰── ❀ 𓂃 ࣪˖ ₊˚⊹";
             
             tieneEstructuraValida = message.content.includes(p1) && 
@@ -95,17 +95,17 @@ client.on('messageCreate', async message => {
 
         } else if (row.tipo === '2') {
             // Plantilla 2 (Presentación COMPLETA con adornos)
-            const adornoArriba = "╭── ⋆˚࿔₊˚⊹﹒`♡ Presentación˚₊‧꒷";
-            const campo1 = "│ ✦ Nombre:";
-            const campo2 = "│ ✦ Apodo:";
-            const campo3 = "│ ✦ Nacionalidad:";
-            const campo4 = "│ ✦ Edad:";
-            const campo5 = "│ ✦ Género:";
-            const campo6 = "│ ✦ Orientación:";
-            const campo7 = "│ ✦ Altura:";
-            const campo8 = "│ ✦ Música favorita:";
-            const campo9 = "│ ✦ Gustos:";
-            const campo10 = "│ ✦ Pasatiempos:";
+            const adornoArriba = "♡ Presentación";
+            const campo1 = "✦ Nombre:";
+            const campo2 = "✦ Apodo:";
+            const campo3 = "✦ Nacionalidad:";
+            const campo4 = "✦ Edad:";
+            const campo5 = "✦ Género:";
+            const campo6 = "✦ Orientación:";
+            const campo7 = "✦ Altura:";
+            const campo8 = "✦ Música favorita:";
+            const campo9 = "✦ Gustos:";
+            const campo10 = "✦ Pasatiempos:";
             const adornoAbajo = "╰── ❀ 𓂃 ࣪˖ ₊˚⊹";
 
             tieneEstructuraValida = message.content.includes(adornoArriba) && 
