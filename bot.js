@@ -81,20 +81,18 @@ client.on('messageCreate', async message => {
 
         if (row.tipo === '1') {
             // Plantilla 1 (Completa con todos sus adornos y diseño exacto)
-            const p1 = "╭── ⋆˚࿔₊˚⊹`♡ DM ˚₊‧꒷";
-            const p2 = "Nombre :";
-            const p3 = "DM : Abierto";
-            const p4 = "Para :";
-            const p5 = "╰── ❀ 𓂃 ࣪˖ ₊˚⊹";
+            const p1 = "✦ Nombre :";
+            const p2 = "✦ DM : Abierto";
+            const p3 = "✦ Para :";
             
             tieneEstructuraValida = message.content.includes(p1) && 
-                                     message.content.includes(p2) && 
-                                     message.content.includes(p3) && 
-                                     message.content.includes(p4) && 
-                                     message.content.includes(p5);
+                                   message.content.includes(p2) && 
+                                   message.content.includes(p3) && 
+                                   message.content.includes(p4) && 
+                                   message.content.includes(p5);
 
         } else if (row.tipo === '2') {
-            // Plantilla 2 (Presentación COMPLETA con adornos)
+            // Plantilla 2 (Presentación COMPLETA con tus nuevos campos)
             const adornoArriba = "♡ Presentación";
             const campo1 = "✦ Nombre:";
             const campo2 = "✦ Apodo:";
@@ -106,20 +104,19 @@ client.on('messageCreate', async message => {
             const campo8 = "✦ Música favorita:";
             const campo9 = "✦ Gustos:";
             const campo10 = "✦ Pasatiempos:";
-            const adornoAbajo = "╰── ❀ 𓂃 ࣪˖ ₊˚⊹";
 
             tieneEstructuraValida = message.content.includes(adornoArriba) && 
-                                     message.content.includes(campo1) && 
-                                     message.content.includes(campo2) && 
-                                     message.content.includes(campo3) && 
-                                     message.content.includes(campo4) && 
-                                     message.content.includes(campo5) && 
-                                     message.content.includes(campo6) && 
-                                     message.content.includes(campo7) && 
-                                     message.content.includes(campo8) && 
-                                     message.content.includes(campo9) && 
-                                     message.content.includes(campo10) && 
-                                     message.content.includes(adornoAbajo);
+                                   message.content.includes(campo1) && 
+                                   message.content.includes(campo2) && 
+                                   message.content.includes(campo3) && 
+                                   message.content.includes(campo4) && 
+                                   message.content.includes(campo5) && 
+                                   message.content.includes(campo6) && 
+                                   message.content.includes(campo7) && 
+                                   message.content.includes(campo8) && 
+                                   message.content.includes(campo9) && 
+                                   message.content.includes(campo10) && 
+                                   message.content.includes(adornoAbajo);
         }
 
         // Si alteran la plantilla o le borran elementos, se borra y se avisa
