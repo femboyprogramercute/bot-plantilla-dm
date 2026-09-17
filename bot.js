@@ -80,19 +80,17 @@ client.on('messageCreate', async message => {
         let tieneEstructuraValida = false;
 
         if (row.tipo === '1') {
-            // Plantilla 1 (Completa con todos sus adornos y diseño exacto)
+            // Plantilla 1
             const p1 = "✦ Nombre :";
             const p2 = "✦ DM : Abierto";
             const p3 = "✦ Para :";
             
             tieneEstructuraValida = message.content.includes(p1) && 
                                    message.content.includes(p2) && 
-                                   message.content.includes(p3) && 
-                                   message.content.includes(p4) && 
-                                   message.content.includes(p5);
+                                   message.content.includes(p3);
 
         } else if (row.tipo === '2') {
-            // Plantilla 2 (Presentación COMPLETA con tus nuevos campos)
+            // Plantilla 2 (Presentación COMPLETA)
             const adornoArriba = "♡ Presentación";
             const campo1 = "✦ Nombre:";
             const campo2 = "✦ Apodo:";
@@ -115,8 +113,7 @@ client.on('messageCreate', async message => {
                                    message.content.includes(campo7) && 
                                    message.content.includes(campo8) && 
                                    message.content.includes(campo9) && 
-                                   message.content.includes(campo10) && 
-                                   message.content.includes(adornoAbajo);
+                                   message.content.includes(campo10);
         }
 
         // Si alteran la plantilla o le borran elementos, se borra y se avisa
